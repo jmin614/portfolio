@@ -1,0 +1,120 @@
+#info{
+  display: flex;
+}
+#info .binkan:first-child{
+  width: 20%; height: 100%;
+  background: skyblue;
+  position: relative;
+}
+#info .binkan{
+  width: 19%; height: 100%;
+}
+#info .binkan h2{
+  position: absolute;
+  top: 100px;
+  right: -1px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+/*인포 컨텐츠*/
+.info-content{
+  width: 60%; height: 100%;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+/*본인 소개*/
+.info-content .one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+.info-content .one .one-text{
+  padding-left: 30px;
+}
+.info-content .one .one-text h3{
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.info-content .one .one-text p{
+  font-size: 20px;
+}
+.info-content .one .one-text .contact{
+  padding-top: 10px;
+}
+.info-content .one .one-img{
+  background: url('../img/myimg.jpg');
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+/*능력 소개*/
+.info-content .two{
+  margin: 0 auto;
+}
+.two-contact{
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.two-contact ul li a{
+  font-size: 18px;
+}
+
+.info-content .two h3{
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.two-contact-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress{
+  width: 150px; height: 150px; background: white;
+  margin: 5px;
+}
+.progress .photo{
+  width: 150px; height: 150px; border-radius: 100%;
+  background: linear-gradient(90deg, pink 50%, rgba(0,0,0,0) 50%) 50%,
+        linear-gradient(-60deg, pink 50%, rgba(0,0,0,0) 50%);
+  position:relative;
+}
+.progress .web{
+  width: 150px; height: 150px; border-radius: 100%;
+  background: linear-gradient(90deg, pink 50%, rgba(0,0,0,0) 50%) 50%,
+        linear-gradient(-35deg, pink 50%, rgba(0,0,0,0) 50%);
+  position:relative;
+}
+.progress .script{
+  width: 150px; height: 150px; border-radius: 100%;
+  background: linear-gradient(90deg, pink 50%, rgba(0,0,0,0) 50%) 50%,
+        linear-gradient(70deg, pink 50%, rgba(0,0,0,0) 50%);
+  position:relative;
+}
+.white{
+  width: 70%; height: 70%; line-height: 100px; background: white;
+  position: absolute; margin: 14.7%;
+  border-radius: 100%;
+}
+.progress h4{
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 3px;
+}
+
+@media screen and (max-height:900px) {
+  .info-content{ padding-top: 30px; }
+  .info-content .one{ padding: 50px 0; }
+  .info-content .one .one-text h3{ font-size: 24px; padding-bottom: 10px;  }
+  .info-content .one .one-text p{ font-size: 18px; }
+  .info-content .one .one-img{ width: 200px; height: 200px; border-radius: 100px; }
+  .progress{ width: 100px; height: 100px; background: white; margin: 5px; }
+  .progress .photo, .progress .web, .progress .script{ width: 100px; height: 100px; border-radius: 100%; }
+  .white{ line-height: 70px; }
+  .progress h4{ font-size: 14px; }
+}

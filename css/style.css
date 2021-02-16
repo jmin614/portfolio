@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import "reset.css";
+@import "info.css";
+@import "port.css";
+
+#info{ height: 100vh; width: 100%; }
+#port{ height: 100vh; width: 100%; background: pink; }
+
+/*메인페이지*/
+#main{
+  width: 100%; height: 100vh;
+  background: url("../img/bg.jpg");
+  background-attachment:fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*애니메이션*/
+.main-title-text h1{
+  font-size: 50px; font-weight: bold;
+  white-space: nowrap; /*한줄로 줄바꿈*/
+  color: transparent;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*정 가운데 고정*/
+}
+.main-title-span{
+  width: 100%;
+  text-align: center; color: white; font-size: 18px;
+  position: absolute;
+  display: flex; justify-content: center; align-items: center;
+  top: 55%;
+}
+
+h1::before {
+  content: "CHOI JI MIN Portfolio.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  border-right: 3px solid white; /*커서*/
+  animation: typing 2s steps(15) forwards; /*포워드, 마지막 고정*/
+}
+
+@keyframes typing {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+footer{
+  text-align: center;
+  font-size: 12px;
+  height: 20px; line-height: 20px;
+  background: pink;
+}
