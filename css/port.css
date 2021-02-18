@@ -80,3 +80,15 @@
   #port ul li img{ width: 200px; height: 200px; }
   #port ul li a .screen::after{ width: 200px; height: 200px; }
 }
+
+@media screen and (max-width:1280px){
+  #port ul li{ width: 200px; height: 200px; margin: 10px; }
+  #port ul li img{ width: 200px; height: 200px; }
+  #port ul li a .screen::after{ width: 200px; height: 200px; }
+}
+
+@media screen and (max-height:900px) and (max-width:900px){
+  #port ul li{ width: 150px; height: 150px; margin: 10px; }
+  #port ul li img{ width: 150px; height: 150px; }
+  #port ul li a .screen::after{ width: 150px; height: 150px; }
+}

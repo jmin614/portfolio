@@ -1,6 +1,6 @@
 window.onload = function () {
     $(".box").each(function () {
-        // 개별적으로 Wheel 이벤트 적용
+        // 개별적 Wheel 이벤트
         $(this).on("mousewheel DOMMouseScroll", function (e) {
             e.preventDefault();
             var delta = 0;
